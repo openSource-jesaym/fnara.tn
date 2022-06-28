@@ -1,0 +1,114 @@
+header{
+    background-color: var(--main-bg-white);
+    width: 100%;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    // border-bottom: 1px solid #e64b41;
+
+    #most-left{
+        display: flex;
+        align-items: center;
+        #brand{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-left: 1rem;
+            cursor: pointer;
+            span{
+                font-size: .5rem;
+                vertical-align: super;
+            }
+        }
+        #help-button{
+            border: none;
+            i{
+                color: var(--accent-color);
+                font-size: var(--i-font-size);
+            }
+            .dropdown-menu li{
+                width: 100%;
+                i{float: right;}
+            }
+            .dropdown-toggle::after{
+                display: none;
+            }
+        }
+    }
+
+    #main-search{
+        width: 700px;
+        border-radius: .5rem;
+        height: 40px;
+        transition: ease-in-out .2s;
+        background-color: var(--secondary-bg-off-white);
+
+        label{
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            padding: 0 1rem;
+        }
+        i{
+            font-size: var(--i-font-size);
+            margin-right: 1rem;
+            color: var(--input-text-color);
+        }
+        input{
+            width: 100%;
+            border: none;
+            font-size: 1rem;
+            color: var(--input-text-color);
+            background-color: transparent;
+            outline: none;
+            &::placeholder{
+                color: var(--input-text-color);
+            }
+        }
+    }
+
+    #controls{
+        height: 50px;
+        #auth-button{
+            background-color: var(--main-blue);
+            color:  var(--main-bg-white);
+            border-radius: 0;
+            outline: none;
+            &:active{
+                background-color: var(--main-blue-off-light);
+            }
+        }
+        #add-new-product-button{
+            background-color: var(--accent-color);
+            color:  var(--main-bg-white);
+            border-radius: 0;
+            outline: none;
+            transition: ease-in-out .1s;
+            &:active{
+                background-color: var(--accent-color-off-light);
+            }
+        }
+        #auth-button,
+        #add-new-product-button{
+            height: 100%;
+            border: none;
+            font-size: 1rem;
+            text-transform: lowercase;
+            padding: 0 1rem;
+            width: 200px;
+            i{
+                margin-right: .5rem;
+            }
+            &:hover{
+                border: none;
+            }
+        }
+    }
+    // end of header
+}
