@@ -9,6 +9,7 @@ import { HeaderComponent } from './pages/header/header.component';
 import { ProductsGridComponent } from './pages/products-grid/products-grid.component';
 import { ProductCardComponent } from './pages/products-grid/product-card/product-card.component';
 import { HomeComponent } from './pages/home/home.component';
+import { SidebarComponent } from './pages/sidebar/sidebar.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { HomeComponent } from './pages/home/home.component';
     ProductsGridComponent,
     ProductCardComponent,
     routingComponents,
-    HomeComponent
+    HomeComponent,
+    SidebarComponent
   ],
   imports: [
     BrowserModule,
