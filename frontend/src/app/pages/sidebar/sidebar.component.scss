@@ -1,0 +1,53 @@
+#main-sidebar{
+    width: 180px;
+    height: 100%;
+    position: fixed;
+    top: 50px;
+    z-index: 3;
+    padding: 0 .2rem;
+    background-color: var(--main-bg-white);
+
+
+
+
+
+
+    a{
+        text-decoration: none;
+        display: block;
+        padding: .4rem 1rem;
+        color: #262626;
+        font-size: 1rem;
+        i{
+            font-size: 1.3rem;
+            padding-right: 1rem;
+        }
+
+        &:hover{
+            background-color: var(--off-white-bg-color);
+        }
+    }
+    header{
+        height: 50px;
+        width: 100%;
+        padding: .4rem 1rem;
+        background-color: yellow;
+        i{
+            font-size: 1.3rem;
+            padding-right: 1rem;
+        }
+
+        #brand{
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            span{
+                font-size: .5rem;
+                vertical-align: super;
+            }
+        }
+    }
+
+
+
+}
