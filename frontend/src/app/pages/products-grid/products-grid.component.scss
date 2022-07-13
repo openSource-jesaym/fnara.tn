@@ -1,5 +1,8 @@
 section{
     position: relative;
+    width: calc(100vw - var(--sidebar-width));
+    height: calc(100vh - var(--header-height));
+    overflow-y: scroll;
     #products-spinner{
         position: absolute;
         top: 30px;
@@ -9,9 +12,9 @@ section{
 
     #products-grid-template{
         width: 100%;
-        padding: 1rem;
+        padding: 1rem 2rem;
         display: grid;
         grid-gap: 1rem;
-        grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
     }
 }
