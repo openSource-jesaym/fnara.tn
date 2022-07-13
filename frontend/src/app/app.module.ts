@@ -10,6 +10,7 @@ import { ProductsGridComponent } from './pages/products-grid/products-grid.compo
 import { ProductCardComponent } from './pages/products-grid/product-card/product-card.component';
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
+import { AboutComponent } from './pages/footer/about/about.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { SidebarComponent } from './pages/sidebar/sidebar.component';
     ProductCardComponent,
     routingComponents,
     HomeComponent,
-    SidebarComponent
+    SidebarComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
