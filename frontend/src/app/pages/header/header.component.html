@@ -4,6 +4,7 @@
         id="brand"
         routerLink="/home"
     >
+        <i class="bi bi-bag"></i>
         sayara
     </div>
 
@@ -15,19 +16,14 @@
     </div>
     
     <div id="controls" class="d-flex">
-        <button class="btn" id="auth-button">
-            <i class="bi bi-person"></i>
-            Authenticate
-        </button>
 
-        <a 
-            class="btn d-flex align-items-center" 
-            id="add-new-product-button"
-            routerLink="/manage-product"
-        >
-            <i class="bi bi-plus-square"></i>
-            Publish
-        </a>
+        <button id="guest-drop-down">
+            <i class="bi bi-three-dots-vertical"></i>
+        </button>
+        <button id="auth-button">
+            <i class="bi bi-person"></i>
+            Log in
+        </button>
     </div>
 
     <!-- end of header -->

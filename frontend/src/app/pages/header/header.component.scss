@@ -9,16 +9,13 @@ header{
     border-bottom: 1px solid var(--main-border-color);
     position: fixed;
     top: 0;
+
     #brand{
         font-size: 1.8rem;
         font-weight: bold;
         color: var(--accent-color);
         margin-left: 1rem;
         cursor: pointer;
-        span{
-            font-size: .5rem;
-            vertical-align: super;
-        }
     }
 
     #main-search{
@@ -54,36 +51,49 @@ header{
     }
 
     #controls{
-        height: 50px;
+        height: var(--header-height);
+        padding: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+
+        
+        button{
+            outline: none;
+            border: none;
+            font-size: 1.18rem;
+        }
+
         #auth-button{
+            width: 200px;
+            height: var(--header-height);
+            color: var(--main-bg-white);
             background-color: var(--main-blue);
+            transition: ease-in-out .2s;
+            
             &:hover{
                 background-color: var(--main-blue-off-light);
             }
             &:active{
                 background-color: var(--main-blue);
             }
+
         }
-        #add-new-product-button{
-            background-color: var(--accent-color);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            &:active{
-                background-color: var(--accent-color-off-light);
-            }
-        }
-        #auth-button,
-        #add-new-product-button{
-            color: var(--main-bg-white);
-            border-radius: 0;
-            border: none;
-            font-size: 1.2rem;
-            padding: 0 1rem;
-            width: 180px;
+
+        #guest-drop-down{
+            color: var(--main-text-color);
+            margin-right: 1rem;
+            background-color: var(--main-bg-white);
+            width: calc(var(--header-height) - 10px);
+            height: calc(var(--header-height) - 10px);
             text-align: center;
-            i{
-                margin-right: .5rem;
+
+            &:hover{
+                color: var(--main-blue-off-light);
+            }
+            &:active{
+                border-radius: 50%;
+                background-color: var(--input-text-color);
             }
         }
     }
