@@ -1,3 +1,5 @@
+@import "./../../../styles.scss";
+
 #main-sidebar{
     width: var(--sidebar-width);
     height: calc(100vh - var(--header-height));
@@ -11,22 +13,7 @@
     left: 0;
     z-index: 5;
     a{
-        display: flex;
-        height: 40px;
-        padding: 0 24px;
-        color: var(--main-text-color);
-        font-size: 14px;
-        line-height: 24px;
-        text-decoration: none;
-        align-items: center;
-        i{
-            font-size: 1.4rem;
-            padding-right: 24px;
-        }
-
-        &:hover{
-            background-color: var(--off-white-bg-color);
-        }
+        @include link-basic-styling;
     }
     .active{
         background-color: var(--off-white-bg-color);
