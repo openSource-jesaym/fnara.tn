@@ -12,6 +12,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { AboutComponent } from './pages/footer/about/about.component';
 import { ContactComponent } from './pages/footer/contact/contact.component';
+import { FaqComponent } from './pages/footer/faq/faq.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { ContactComponent } from './pages/footer/contact/contact.component';
     HomeComponent,
     SidebarComponent,
     AboutComponent,
-    ContactComponent
+    ContactComponent,
+    FaqComponent
   ],
   imports: [
     BrowserModule,

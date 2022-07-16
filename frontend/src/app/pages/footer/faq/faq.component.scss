@@ -1,13 +1,13 @@
 @import "./../../../../styles.scss";
 
-#about-us{
+
+#faq{
     width: calc(100vw - var(--sidebar-width));
 main{
     @include footer-pages;
-
-    img{
-        width: 100%;
-        margin-bottom: 2rem;
+    .question{
+        font-weight: bold;
+        margin-top: 1rem;
     }
 }
 }
