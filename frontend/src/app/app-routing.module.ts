@@ -3,11 +3,13 @@ import { RouterModule, Routes } from '@angular/router';
 import {ProductManageComponent} from "./pages/product-manage/product-manage.component";
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/footer/about/about.component';
+import { ContactComponent } from './pages/footer/contact/contact.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent},
   { path: 'about', component: AboutComponent},
+  { path: 'contact', component: ContactComponent},
   { path: 'manage-product', component: ProductManageComponent },
   { path: '**', redirectTo: 'home'},
 ];

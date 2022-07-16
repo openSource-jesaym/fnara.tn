@@ -11,6 +11,7 @@ import { ProductCardComponent } from './pages/products-grid/product-card/product
 import { HomeComponent } from './pages/home/home.component';
 import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { AboutComponent } from './pages/footer/about/about.component';
+import { ContactComponent } from './pages/footer/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { AboutComponent } from './pages/footer/about/about.component';
     routingComponents,
     HomeComponent,
     SidebarComponent,
-    AboutComponent
+    AboutComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,

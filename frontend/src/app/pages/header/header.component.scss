@@ -1,13 +1,14 @@
 header{
     background-color: var(--main-bg-white);
-    width: 100%;
+    width: 100vw;
     height: var(--header-height);
     display: flex;
     align-items: center;
     justify-content: space-between;
     z-index: 2;
     border-bottom: 1px solid var(--main-border-color);
-
+    position: fixed;
+    top: 0;
     #brand{
         font-size: 1.8rem;
         font-weight: bold;
