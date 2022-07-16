@@ -22,7 +22,7 @@ header{
 
     #main-search{
         width: 700px;
-        border-radius: .5rem;
+        border-radius: .5rem;   
         height: 40px;
         transition: ease-in-out .2s;
         background-color: var(--secondary-bg-off-white);
@@ -52,12 +52,13 @@ header{
         }
     }
 
+    // DYNAMIC CONTROLS BASED ON AUTHENTIACTION STATUS
+    
     #controls{
         height: var(--header-height);
         padding: 0;
         margin: 0;
-        display: flex;
-        align-items: center;
+        @include flex-row;
 
         
         button{
@@ -71,7 +72,6 @@ header{
             height: var(--header-height);
             color: var(--main-bg-white);
             background-color: var(--main-blue);
-            transition: ease-in-out .2s;
             
             &:hover{
                 background-color: var(--main-blue-off-light);
@@ -81,41 +81,68 @@ header{
             }
 
         }
-
-        #drop-menu{
-            position: relative;
-            #guest-drop-down{
-                color: var(--main-text-color);
-                margin-right: 1rem;
-                background-color: var(--main-bg-white);
-                width: calc(var(--header-height) - 10px);
-                height: calc(var(--header-height) - 10px);
-                text-align: center;
-
-                &:hover{
-                    color: var(--main-blue-off-light);
-                }
-                &:active{
-                    border-radius: 50%;
-                    background-color: var(--input-text-color);
-                }
-            }
-
-            #actual-menu{
-                position: absolute;
-                width: 280px;
-                height: auto;
-                padding: .5rem;
-                top: var(--header-height);
-                right: 20px;
-                background-color: var(--main-bg-white);
-                border: 1px solid var(--main-border-color);
-                
-                a{
-                    @include link-basic-styling;
-                }
-            }
-        }
     }
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    // #controls-authenticated{
+    //     width: 240px;
+    //     position: relative;
+    //     @include flex-row;
+
+    //     #drop-menu{
+    //         @include user-drop-down-menu;
+    //     }
+        
+    //     a{
+    //         @include header-navigation;
+    //         text-decoration: none;
+    //         border-radius: .5rem;
+    //         i{
+    //             font-size: 1.4rem;
+    //         }
+
+    //         &:hover{
+    //             color: var(--main-blue-off-light);
+    //         }
+    //     }
+    // }
     // end of header
 }

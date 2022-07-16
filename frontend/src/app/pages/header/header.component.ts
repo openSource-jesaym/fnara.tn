@@ -25,6 +25,7 @@ export class HeaderComponent implements OnInit {
   ]
 
   toggleDropDown: any = false;
+  isAuthenticated: any = true;
   constructor() { }
 
   ngOnInit(): void {
