@@ -23,9 +23,16 @@ export class HeaderComponent implements OnInit {
       "url": "https://www.google.com"
     },
   ]
+
+  toggleDropDown: any = false;
   constructor() { }
 
   ngOnInit(): void {
+    this.toggleDropDown = false;
+  }
+
+  toggleMenu() {
+    this.toggleDropDown = !this.toggleDropDown;
   }
 
 }

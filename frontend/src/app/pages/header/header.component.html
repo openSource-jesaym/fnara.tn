@@ -4,6 +4,7 @@
         id="brand"
         routerLink="/home"
     >
+        <i class="bi bi-bag"></i>
         sayara
     </div>
 
@@ -15,19 +16,52 @@
     </div>
     
     <div id="controls" class="d-flex">
-        <button class="btn" id="auth-button">
-            <i class="bi bi-person"></i>
-            Authenticate
-        </button>
 
-        <a 
-            class="btn d-flex align-items-center" 
-            id="add-new-product-button"
-            routerLink="/manage-product"
-        >
-            <i class="bi bi-plus-square"></i>
-            Publish
-        </a>
+        <div id="drop-menu"> 
+            <button 
+                id="guest-drop-down"
+                (click)="toggleMenu()"
+            >
+                <i class="bi bi-three-dots-vertical"></i>
+            </button>
+
+            <nav 
+                id="actual-menu"
+                *ngIf="toggleDropDown"
+                >
+                <a routerLink="#">
+                    <i class="bi bi-globe"></i>
+                    <span>Language</span>
+                </a>
+                <!-- general links -->
+                <a routerLink="#">
+                    <i class="bi bi-moon"></i>
+                    <span>Theme</span>
+                </a>
+
+                <!-- footer links -->
+                <a routerLink="/faq">
+                    <i class="bi bi-journals"></i>
+                    <span>FAQ</span>
+                </a>
+                <a routerLink="/contact">
+                    <i class="bi bi-megaphone"></i>
+                    <span>Contact</span>
+                </a>
+                <a routerLink="/about">
+                    <i class="bi bi-question-square"></i>
+                    <span>About</span>
+                </a>
+                <a routerLink="/feedback">
+                    <i class="bi bi-envelope-paper-heart"></i>
+                    <span>Feedback</span>
+                </a>
+            </nav>
+        </div>
+        <button id="auth-button">
+            <i class="bi bi-person"></i>
+            Log in
+        </button>
     </div>
 
     <!-- end of header -->

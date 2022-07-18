@@ -1,13 +1,8 @@
 @import "./../../../../styles.scss";
 
-#about-us{
+#contact-us{
     width: calc(100vw - var(--sidebar-width));
 main{
     @include footer-pages;
-
-    img{
-        width: 100%;
-        margin-bottom: 2rem;
-    }
 }
 }
