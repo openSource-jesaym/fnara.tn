@@ -23,6 +23,7 @@ import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { LogoComponent } from './shared/logo/logo.component';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 
 
@@ -50,7 +51,8 @@ import { LogoComponent } from './shared/logo/logo.component';
     MatIconModule,
     MatMenuModule,
     MatDividerModule,
-    MatExpansionModule
+    MatExpansionModule,
+    MatTooltipModule
   ],
   providers: [],
   bootstrap: [AppComponent]

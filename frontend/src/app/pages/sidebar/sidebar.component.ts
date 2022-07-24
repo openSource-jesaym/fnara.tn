@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { SidebarService } from 'src/app/services/sidebar.service';
 
 @Component({
   selector: 'app-sidebar',
@@ -24,9 +25,15 @@ export class SidebarComponent implements OnInit {
       link: 'https://www.google.com',
     }
   ];
-  constructor() { }
+  
+  sidebarIsOn: any;
+
+  constructor(
+    private sidebarService: SidebarService
+  ) { }
 
   ngOnInit(): void {
+    this.sidebarService.sidebarstateOB.subscribe(state=>this.sidebarIsOn = state);
   }
 
 }
