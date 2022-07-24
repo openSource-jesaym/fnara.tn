@@ -12,17 +12,12 @@
     position: fixed;
     left: 0;
     z-index: 5;
-    a{
-        @include link-basic-styling;
-    }
+
+    a{ @include link-basic-styling; }
+
     .active{
         background-color: var(--off-white-bg-color);
         font-weight: 500;
-    }
-
-    #upperSection{
-        padding-bottom: 1rem;
-        border-bottom: 1px solid var(--main-border-color);
     }
 
     #categories, #other{
@@ -35,30 +30,55 @@
             color: var(--main-text-color);
         }
     }
-    #other{
-        margin-top: 1rem;
-        border-top: 1px solid var(--main-border-color);
-    }
 
-    #sidebar-trigger{
-        position: absolute;
-        top: 50px;
-        right: -10px;
-        cursor: pointer;
-        height: 26px;
-        width: 26px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 50%;
-        background-color: var(--main-border-color);
-        i{
-            font-size: 24px;
-            color: var(--main-bg-white);
-        }
-    }
     /* Hide scrollbar for Chrome, Safari and Opera */
     &::-webkit-scrollbar{
         width: 0px;
+    }
+    animation: maximize-sidebar .1s ease-in-out;
+}
+
+#main-sidebar-minimized{
+    width: 72px;
+    height: calc(100vh - var(--header-height));
+    padding: 0 .2rem;
+    overflow: -moz-hidden-unscrollable;
+    
+    background-color: var(--main-bg-white);
+    border-right: 1px solid var(--main-border-color);
+    scrollbar-width: none;  /* Firefox */
+    position: fixed;
+    left: 0;
+    z-index: 5;
+    animation: minimize-sidebar .1s ease-in-out;
+
+    a{ @include link-basic-styling; }
+
+    .active{
+        background-color: var(--off-white-bg-color);
+        font-weight: 500;
+    }
+
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    &::-webkit-scrollbar{
+        width: 0px;
+    }
+}
+
+@keyframes minimize-sidebar{
+    0%{
+        width: var(--sidebar-width);
+    }
+    100%{
+        width: 72px;
+    }
+}
+
+@keyframes maximize-sidebar{
+    0%{
+        width: 72px;
+    }
+    100%{
+        width: var(--sidebar-width);
     }
 }

@@ -12,12 +12,11 @@ header{
     position: fixed;
     top: 0;
 
-    #brand{
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: var(--accent-color);
-        margin-left: 1rem;
-        cursor: pointer;
+    #left-most-action{
+        display: flex;
+        align-items: center;
+    
+        width: fit-content;
     }
 
     #main-search{
@@ -52,97 +51,24 @@ header{
         }
     }
 
-    // DYNAMIC CONTROLS BASED ON AUTHENTIACTION STATUS
-    
-    #controls{
-        height: var(--header-height);
-        padding: 0;
-        margin: 0;
-        @include flex-row;
 
-        
-        button{
-            outline: none;
-            border: none;
-            font-size: 1.18rem;
-        }
+    #controls{
+        display: flex;
+        align-items: center;
+
 
         #auth-button{
-            width: 200px;
+            margin-left: .5rem;
+            width: 170px;
             height: var(--header-height);
             color: var(--main-bg-white);
             background-color: var(--main-blue);
-            
-            &:hover{
-                background-color: var(--main-blue-off-light);
-            }
-            &:active{
-                background-color: var(--main-blue);
-            }
 
+            font-size: 1.3rem;
+            span{margin-left: .5rem;}
+            border-radius: 0;
         }
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    // #controls-authenticated{
-    //     width: 240px;
-    //     position: relative;
-    //     @include flex-row;
 
-    //     #drop-menu{
-    //         @include user-drop-down-menu;
-    //     }
-        
-    //     a{
-    //         @include header-navigation;
-    //         text-decoration: none;
-    //         border-radius: .5rem;
-    //         i{
-    //             font-size: 1.4rem;
-    //         }
-
-    //         &:hover{
-    //             color: var(--main-blue-off-light);
-    //         }
-    //     }
-    // }
     // end of header
 }

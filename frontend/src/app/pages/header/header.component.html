@@ -1,144 +1,23 @@
 <header>
-
-    <div 
-        id="brand"
-        routerLink="/home"
-    >
-        <i class="bi bi-bag"></i>
-        sayara
+    <div id="left-most-action">
+        <button mat-button (click)="toggleSidebar()">
+            <mat-icon>menu</mat-icon>
+        </button>
+        <app-logo textSize="150px"></app-logo>
     </div>
-
     <div id="main-search">
         <label>
             <i class="bi bi-search"></i>
             <input type="text" placeholder="Search">
         </label>
     </div>
-    
-    <div id="controls" *ngIf="isAuthenticated">
-        <div id="drop-menu-container"> 
-            <button 
-                id="guest-drop-down-trigger"
-                (click)="toggleMenu()"
-            >
-                <i class="bi bi-three-dots-vertical"></i>
-            </button>
+    <div id="controls" class="d-flex">
 
-            <nav 
-                id="actual-menu"
-                *ngIf="toggleDropDown"
-                >
-                <a routerLink="#">
-                    <i class="bi bi-globe"></i>
-                    <span>Language</span>
-                </a>
-                <!-- general links -->
-                <a routerLink="#">
-                    <i class="bi bi-moon"></i>
-                    <span>Theme</span>
-                </a>
-
-                <!-- footer links -->
-                <a routerLink="/faq">
-                    <i class="bi bi-journals"></i>
-                    <span>FAQ</span>
-                </a>
-                <a routerLink="/contact">
-                    <i class="bi bi-megaphone"></i>
-                    <span>Contact</span>
-                </a>
-                <a routerLink="/about">
-                    <i class="bi bi-question-square"></i>
-                    <span>About</span>
-                </a>
-                <a routerLink="/feedback">
-                    <i class="bi bi-envelope-paper-heart"></i>
-                    <span>Feedback</span>
-                </a>
-            </nav>
-        </div>
-        <button id="auth-button">
-            <i class="bi bi-person"></i>
-            Log in
+        <app-toggle-menu></app-toggle-menu>
+        <button id="auth-button" mat-button>
+            <mat-icon>person</mat-icon>
+            <span>Log in</span>
         </button>
-    </div>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    <div id="controls-authenticated" *ngIf="!isAuthenticated">
-
-        <a routerLink="/cart">
-            <i class="bi bi-basket"></i>
-        </a>
-
-        <a routerLink="/notifications">
-            <i class="bi bi-bell"></i>
-        </a>
-        
-        <a routerLink="/messages">
-            <i class="bi bi-chat-square-dots"></i>
-        </a>
-
-        <a 
-            id="guest-drop-down-trigger"
-            (click)="toggleMenu()"
-        >
-            <i class="bi bi-person"></i>
-        </a>
-
-        <nav 
-            id="actual-menu"
-            *ngIf="toggleDropDown"
-        >
-            <a routerLink="#">
-                <i class="bi bi-globe"></i>
-                <span>Language</span>
-            </a>
-            <!-- general links -->
-            <a routerLink="#">
-                <i class="bi bi-moon"></i>
-                <span>Theme</span>
-            </a>
-
-            <!-- footer links -->
-            <a routerLink="/faq">
-                <i class="bi bi-journals"></i>
-                <span>FAQ</span>
-            </a>
-            <a routerLink="/contact">
-                <i class="bi bi-megaphone"></i>
-                <span>Contact</span>
-            </a>
-            <a routerLink="/about">
-                <i class="bi bi-question-square"></i>
-                <span>About</span>
-            </a>
-            <a routerLink="/feedback">
-                <i class="bi bi-envelope-paper-heart"></i>
-                <span>Feedback</span>
-            </a>
-        </nav>
     </div>
 
     <!-- end of header -->

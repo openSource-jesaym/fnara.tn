@@ -1,11 +1,9 @@
-<div 
-    class="card"
-    [ngStyle]="{'background': 'url('+product.image+ ')', 'background-size': 'cover', 'background-position': 'center'}"
->
-    <div class="overlay">
-        <span class="price">{{product.price}} TND</span>
+<div class="card">
+    <div class="product-image" [ngStyle]="{'background': 'url('+product.image+ ')', 'background-size': 'cover', 'background-position': 'center'}">
+    </div>
+    <div class="product-info">
+        <span class="price">{{product.price}} د.ت</span>
         <h3>{{product.name}}</h3>
-        <p>{{product.description}}</p>
         <!-- end of overlay -->
     </div>
 </div>
