@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {MatIconModule} from '@angular/material/icon';
-
+import { SidebarService } from 'src/app/services/sidebar.service';
 
 @Component({
   selector: 'app-header',
@@ -9,30 +8,20 @@ import {MatIconModule} from '@angular/material/icon';
 })
 export class HeaderComponent implements OnInit {
 
-  helpLinks: any[] = [
-    {
-      "title": "Need help?",
-      "url": "https://www.google.com"
-    },
-    {
-      "title": "Get in touch",
-      "url": "https://www.google.com"
-    },
-    {
-      "title": "Terms of use",
-      "url": "https://www.google.com"
-    },
-  ]
 
-  toggleDropDown: any = false;
-  constructor() { }
+
+  constructor(
+    private sidebarService: SidebarService
+  ) { }
+
 
   ngOnInit(): void {
-    this.toggleDropDown = false;
+    this.sidebarService.sidebarIsOn = true;
   }
 
-  toggleMenu() {
-    this.toggleDropDown = !this.toggleDropDown;
+  toggleSidebar() {
+    this.sidebarService.toggleSidebar();
+    
   }
 
 }

@@ -1,4 +1,4 @@
-@import "../../../styles.scss";
+@import "../../../_mixins.scss";
 
 header{
     background-color: var(--main-bg-white);
@@ -12,17 +12,16 @@ header{
     position: fixed;
     top: 0;
 
-    #brand{
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: var(--accent-color);
-        margin-left: 1rem;
-        cursor: pointer;
+    #left-most-action{
+        display: flex;
+        align-items: center;
+    
+        width: fit-content;
     }
 
     #main-search{
         width: 700px;
-        border-radius: .5rem;
+        border-radius: .5rem;   
         height: 40px;
         transition: ease-in-out .2s;
         background-color: var(--secondary-bg-off-white);
@@ -52,70 +51,24 @@ header{
         }
     }
 
+
     #controls{
-        height: var(--header-height);
-        padding: 0;
-        margin: 0;
         display: flex;
         align-items: center;
 
-        
-        button{
-            outline: none;
-            border: none;
-            font-size: 1.18rem;
-        }
 
         #auth-button{
-            width: 200px;
+            margin-left: .5rem;
+            width: 170px;
             height: var(--header-height);
             color: var(--main-bg-white);
             background-color: var(--main-blue);
-            transition: ease-in-out .2s;
-            
-            &:hover{
-                background-color: var(--main-blue-off-light);
-            }
-            &:active{
-                background-color: var(--main-blue);
-            }
 
-        }
-
-        #drop-menu{
-            position: relative;
-            #guest-drop-down{
-                color: var(--main-text-color);
-                margin-right: 1rem;
-                background-color: var(--main-bg-white);
-                width: calc(var(--header-height) - 10px);
-                height: calc(var(--header-height) - 10px);
-                text-align: center;
-
-                &:hover{
-                    color: var(--main-blue-off-light);
-                }
-                &:active{
-                    border-radius: 50%;
-                    background-color: var(--input-text-color);
-                }
-            }
-
-            #actual-menu{
-                position: absolute;
-                width: 280px;
-                height: auto;
-                padding: .5rem;
-                top: var(--header-height);
-                right: 20px;
-                background-color: var(--main-bg-white);
-                border: 1px solid var(--main-border-color);
-                
-                a{
-                    @include link-basic-styling;
-                }
-            }
+            font-size: 1.3rem;
+            span{margin-left: .5rem;}
+            border-radius: 0;
         }
     }
+
     // end of header
 }
