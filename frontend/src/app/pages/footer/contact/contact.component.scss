@@ -1,8 +1,8 @@
-@import "./../../../../styles.scss";
+@import "./../../../../_mixins.scss";
 
 #contact-us{
     width: calc(100vw - var(--sidebar-width));
-main{
-    @include footer-pages;
-}
+    main{
+        @include footer-pages;
+    }
 }

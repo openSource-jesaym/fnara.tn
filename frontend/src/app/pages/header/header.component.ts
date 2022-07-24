@@ -9,9 +9,11 @@ import { SidebarService } from 'src/app/services/sidebar.service';
 export class HeaderComponent implements OnInit {
 
 
+
   constructor(
     private sidebarService: SidebarService
   ) { }
+
 
   ngOnInit(): void {
     this.sidebarService.sidebarIsOn = true;
