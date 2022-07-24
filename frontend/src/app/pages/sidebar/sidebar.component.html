@@ -1,7 +1,4 @@
 <nav id="main-sidebar">
-    <div id="sidebar-trigger">
-        <i class="bi bi-arrow-right-short"></i>
-    </div>
     <div id="upperSection">
         <a routerLink="/home" class="active">
             <i class="bi bi-house-door"></i>
@@ -21,17 +18,16 @@
         </a>
     </div>
 
+    <mat-divider></mat-divider>
     <div id="categories">
         <h3>Categories</h3>
-        <a 
-            *ngFor="let c of categories"
-            routerLink="#"
-        >
+        <a *ngFor="let c of categories" routerLink="#">
             <i class="bi bi-app"></i>
             {{ c.name }}
         </a>
     </div>
 
+    <mat-divider></mat-divider>
     <div id="other">
         <h3>Other</h3>
 

@@ -12,12 +12,11 @@ header{
     position: fixed;
     top: 0;
 
-    #brand{
-        font-size: 1.8rem;
-        font-weight: bold;
-        color: var(--accent-color);
-        margin-left: 1rem;
-        cursor: pointer;
+    #left-most-action{
+        display: flex;
+        align-items: center;
+    
+        width: fit-content;
     }
 
     #main-search{
@@ -52,34 +51,20 @@ header{
         }
     }
 
+
     #controls{
-        height: var(--header-height);
-        padding: 0;
-        margin: 0;
         display: flex;
         align-items: center;
 
-        
-        button{
-            outline: none;
-            border: none;
-            font-size: 1.18rem;
-        }
-
         #auth-button{
-            width: 200px;
+            margin-left: .5rem;
+            width: 170px;
             height: var(--header-height);
             color: var(--main-bg-white);
             background-color: var(--main-blue);
-            transition: ease-in-out .2s;
-            
-            &:hover{
-                background-color: var(--main-blue-off-light);
-            }
-            &:active{
-                background-color: var(--main-blue);
-            }
-
+            font-size: 1.3rem;
+            span{margin-left: .5rem;}
+            border-radius: 0;
         }
     }
     // end of header

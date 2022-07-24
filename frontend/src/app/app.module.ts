@@ -22,6 +22,7 @@ import { MatIconModule } from '@angular/material/icon'
 import {MatMenuModule} from '@angular/material/menu';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { LogoComponent } from './shared/logo/logo.component';
 
 
 
@@ -37,7 +38,8 @@ import {MatExpansionModule} from '@angular/material/expansion';
     AboutComponent,
     ContactComponent,
     FaqComponent,
-    ToggleMenuComponent
+    ToggleMenuComponent,
+    LogoComponent
   ],
   imports: [
     BrowserModule,

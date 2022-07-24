@@ -1,0 +1,12 @@
+#brand{
+    // font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--main-blue);
+    cursor: pointer;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+
+    display: flex;
+    align-items: center;
+    mat-icon{margin-right: .5rem;}
+}

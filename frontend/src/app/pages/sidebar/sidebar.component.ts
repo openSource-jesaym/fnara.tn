@@ -22,27 +22,7 @@ export class SidebarComponent implements OnInit {
     {
       name: 'Boats',
       link: 'https://www.google.com',
-    },
-    {
-      name: 'Books',
-      link: 'https://www.google.com',
-    },
-    {
-      name: 'Sports',
-      link: 'https://www.google.com',
-    },
-    {
-      name: 'Gaming',
-      link: 'https://www.google.com',
-    },
-    {
-      name: 'Movies',
-      link: 'https://www.google.com',
-    },
-    {
-      name: 'Music',
-      link: 'https://www.google.com',
-    },
+    }
   ];
   constructor() { }
 

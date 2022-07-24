@@ -1,25 +1,23 @@
 <header>
-
-    <div id="brand" routerLink="/home">
-        <i class="bi bi-bag"></i>
-        sayara
+    <div id="left-most-action">
+        <button mat-button>
+            <mat-icon>menu</mat-icon>
+        </button>
+        <app-logo textSize="1.8rem"></app-logo>
     </div>
-
     <div id="main-search">
         <label>
             <i class="bi bi-search"></i>
             <input type="text" placeholder="Search">
         </label>
     </div>
-
     <div id="controls" class="d-flex">
 
         <app-toggle-menu></app-toggle-menu>
-        <button id="auth-button">
-            <i class="bi bi-person"></i>
-            Log in
+        <button id="auth-button" mat-button>
+            <mat-icon>person</mat-icon>
+            <span>Log in</span>
         </button>
     </div>
-
     <!-- end of header -->
 </header>
