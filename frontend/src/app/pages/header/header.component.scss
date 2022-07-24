@@ -81,41 +81,6 @@ header{
             }
 
         }
-
-        #drop-menu{
-            position: relative;
-            #guest-drop-down{
-                color: var(--main-text-color);
-                margin-right: 1rem;
-                background-color: var(--main-bg-white);
-                width: calc(var(--header-height) - 10px);
-                height: calc(var(--header-height) - 10px);
-                text-align: center;
-
-                &:hover{
-                    color: var(--main-blue-off-light);
-                }
-                &:active{
-                    border-radius: 50%;
-                    background-color: var(--input-text-color);
-                }
-            }
-
-            #actual-menu{
-                position: absolute;
-                width: 280px;
-                height: auto;
-                padding: .5rem;
-                top: var(--header-height);
-                right: 20px;
-                background-color: var(--main-bg-white);
-                border: 1px solid var(--main-border-color);
-                
-                a{
-                    @include link-basic-styling;
-                }
-            }
-        }
     }
     // end of header
 }

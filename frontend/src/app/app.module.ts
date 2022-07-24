@@ -13,6 +13,17 @@ import { SidebarComponent } from './pages/sidebar/sidebar.component';
 import { AboutComponent } from './pages/footer/about/about.component';
 import { ContactComponent } from './pages/footer/contact/contact.component';
 import { FaqComponent } from './pages/footer/faq/faq.component';
+import { ToggleMenuComponent } from './pages/header/toggle-menu/toggle-menu.component';
+
+
+// ANGULAR MATERIAL
+import {MatButtonModule} from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon'
+import {MatMenuModule} from '@angular/material/menu';
+import {MatDividerModule} from '@angular/material/divider';
+import {MatExpansionModule} from '@angular/material/expansion';
+
+
 
 @NgModule({
   declarations: [
@@ -25,13 +36,19 @@ import { FaqComponent } from './pages/footer/faq/faq.component';
     SidebarComponent,
     AboutComponent,
     ContactComponent,
-    FaqComponent
+    FaqComponent,
+    ToggleMenuComponent
   ],
   imports: [
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatButtonModule,
+    MatIconModule,
+    MatMenuModule,
+    MatDividerModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
