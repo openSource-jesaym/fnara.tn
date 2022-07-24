@@ -2,12 +2,12 @@
     background: -webkit-linear-gradient(#1dabf7, #075aca);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-
     font-weight: bold;
     cursor: pointer;
     text-transform: uppercase;
     letter-spacing: .2rem;
-    display: flex;
-    align-items: center;
-    mat-icon{margin-right: .5rem;}
+
+    display: inline-block;
+
+    mat-icon{margin-right: 1rem;}
 }
