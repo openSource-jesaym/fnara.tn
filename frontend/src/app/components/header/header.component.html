@@ -1,0 +1,31 @@
+<mat-toolbar>
+    <button mat-icon-button class="example-icon">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <app-logo textSize="90px"></app-logo>
+    <span class="spacer"></span>
+
+    <div id="main-search">
+        <label>
+            <i class="bi bi-search"></i>
+            <input type="text" placeholder="Search">
+        </label>
+    </div>
+
+
+    <span class="spacer"></span>
+    <button mat-icon-button [matMenuTriggerFor]="menu">
+        <mat-icon>more_vert</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+        <app-toggle-menu></app-toggle-menu>
+    </mat-menu>
+
+
+
+    <!-- Authticate -->
+    <button mat-flat-button id="login-button">
+        <mat-icon>lock_open</mat-icon>
+        <span>Authenticate</span>
+    </button>
+</mat-toolbar>

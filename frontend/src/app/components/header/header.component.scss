@@ -1,0 +1,52 @@
+@import "../../../_mixins.scss";
+
+mat-toolbar {
+    background-color: var(--main-bg-white);
+    border-bottom: 1px solid var(--main-border-color);
+}
+
+.spacer {
+    flex: 1 1 auto;
+}
+
+#main-search {
+    width: 700px;
+    border-radius: .5rem;
+    height: 40px;
+    transition: ease-in-out .2s;
+    background-color: var(--secondary-bg-off-white);
+
+    label {
+        height: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 0 1rem;
+    }
+
+    i {
+        font-size: var(--i-font-size);
+        margin-right: 1rem;
+        color: var(--input-text-color);
+    }
+
+    input {
+        width: 100%;
+        border: none;
+        font-size: 1rem;
+        color: #000;
+        background-color: transparent;
+        outline: none;
+
+        &::placeholder {
+            color: var(--input-text-color);
+        }
+    }
+}
+
+#login-button {
+    background-color: var(--main-blue);
+    color: var(--main-bg-white);
+    height: 100%;
+    border-radius: 0;
+}
